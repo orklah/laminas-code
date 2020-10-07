@@ -313,7 +313,6 @@ class ValueGenerator extends AbstractGenerator
                 }
                 return self::TYPE_STRING;
             case 'double':
-            case 'float':
             case 'integer':
                 return self::TYPE_NUMBER;
             case 'array':
