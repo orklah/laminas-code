@@ -30,7 +30,9 @@
         "doctrine/annotations": "^1.7",
         "laminas/laminas-coding-standard": "^1.0",
         "laminas/laminas-stdlib": "^2.7 || ^3.0",
-        "phpunit/phpunit": "^7.5.16 || ^8.4"
+        "phpunit/phpunit": "^7.5.16 || ^8.4",
+        "psalm/plugin-phpunit": "^0.12.2",
+        "vimeo/psalm": "^3.16"
     },
     "conflict": {
         "phpspec/prophecy": "<1.9.0"
@@ -57,7 +59,8 @@
         "cs-check": "phpcs",
         "cs-fix": "phpcbf",
         "test": "phpunit --colors=always",
-        "test-coverage": "phpunit --colors=always --coverage-clover clover.xml"
+        "test-coverage": "phpunit --colors=always --coverage-clover clover.xml",
+        "static-analysis": "psalm --shepherd --stats"
     },
     "replace": {
         "zendframework/zend-code": "^3.4.1"
