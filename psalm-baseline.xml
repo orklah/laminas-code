@@ -944,9 +944,9 @@
       <code>$allowedTypes</code>
       <code>ValueGenerator</code>
     </PropertyNotSetInConstructor>
-    <UnevaluatedCode occurrences="1">
-      <code>'float'</code>
-    </UnevaluatedCode>
+    <RedundantCondition occurrences="1">
+      <code>'double'</code>
+    </RedundantCondition>
   </file>
   <file src="src/Generic/Prototype/PrototypeClassFactory.php">
     <DocblockTypeContradiction occurrences="1">
@@ -1955,10 +1955,6 @@
       <code>list($tokenNextType, $tokenNextContent, $tokenNextLine)</code>
       <code>list($tokenType, $tokenContent, $tokenLine)</code>
     </MixedAssignment>
-    <ParadoxicalCondition occurrences="2">
-      <code>is_string($token)</code>
-      <code>is_string($token)</code>
-    </ParadoxicalCondition>
     <PossiblyInvalidMethodCall occurrences="1">
       <code>getValue</code>
     </PossiblyInvalidMethodCall>
